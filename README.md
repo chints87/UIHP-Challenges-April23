@@ -26,7 +26,7 @@ What do you see? Your tab or window should show the text you see inside the `<ti
 
 4. Uncomment the line containing the `stylesheet` in `index.html` to add some pizazz to our page - remember, when this loads, it will populate the [CSSOM](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model), similar to how our HTML populates the DOM with elements to render.
 
-Now what? Even if we can change the data on the DOM, we can't do anything with that data or access it directly. We would still need some kind of logic to make something happen in the event that a user types in our input or a button is clicked. Our `html` is only being loaded once and we can't run any code in the DOM. Therefore, we need JavaScript to create, save, and update data.
+Now what? We can change the data on the DOM via the DOM, but cannot access it should we want to use it for purposes such as comparing it or modifying it with customized rules - say captialize all letters. For this, we need to be able to access that data in DOM and define logic to make to modify it. Our `html` is loaded once and cannot apply these customized rules to change DOM data. Therefore, JavaScript enables us to apply such rules and in addition create new data (which can be new DOM elements); modify existing data(modify data typed in DOM); or delete data.
 
 5. Uncomment the `<script>` tag in `index.html`. This script acts as a link between the `html` and the code in the linked JavaScript file. When our `script` loads with our HTML in the browser, the JavaScript engine will start running and allow us to run our JS code in the browser directly (and access everything else we get with the JS runtime, including `memory` to store data).
 
@@ -56,7 +56,7 @@ If you're unfamiliar with DOM manipulation, take a look at the [docs](https://de
 We should now have a full User Interface (UI) which addresses our two main goals:
 
 - Display content (data inside computer/from internet) as the 'view' for users to see, and
-- Enable the user to interact (tap, click, etc) with the 'view' they see and change it (by changing the udnerlying data & updating the view).
+- Enable the user to interact (tap, click, etc) with the 'view' they see and change it (by changing the underlying data & updating the view).
 
 ---
 
