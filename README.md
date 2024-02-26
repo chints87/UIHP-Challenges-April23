@@ -51,7 +51,7 @@ If you're unfamiliar with DOM manipulation, take a look at the [docs](https://de
 
    Set the `textContent` on the `div` to to be the value of `post` here in `handleInput` instead.
 
-10. Finally, let's create an `event handler` that will run our `handleInput` function in the event that a user types in `input`. There are several ways to do this, but one is the [`oninput`](https://www.w3schools.com/jsref/event_oninput.asp) property on the `jsInput` object. Us this to set `handleInput` on our input DOM element as a callback.
+10. Finally, let's create an `event handler` that will run our `handleInput` function in the event that a user types in `input`. There are several ways to do this, but one is the [`oninput`](https://www.w3schools.com/jsref/event_oninput.asp) property on the `jsInput` object. Use this to set `handleInput` on our input DOM element as a callback.
 
 We should now have a full User Interface (UI) which addresses our two main goals:
 
@@ -70,9 +70,9 @@ Now that we have a simple application our users can interact with, how can we ma
 
 Click into the input and type something. Notice that the user needs to manually delete the placeholder text that is in the input box every time they want to type in a new input.
 
-3. Let's add a click handler `'handleClick'` for the input box which sets the `value` inside the input box to an empty string when the user clicks in it to type. HINT: Make sure to add `handleClick` as a callback to the input element.
+3. Let's add a click handler `'handleClick'` for the input box which sets the `value` inside the input box to an empty string when the user clicks in it to type. HINT: Make sure to add `handleClick` as a callback to the 'onclick' method of input element.
 
-Now we're changing our 'view' based on several different possible user interactions. How can we make these changes more predictable? Let's restrict every change to view to be via:
+Now we're changing our 'view' based on several different possible user interactions i.e 'onclick' and 'oninput. How can we make these changes more predictable? Let's restrict every change to view to be via:
 
 - an update of 'data'
 - a run of a single `dataToView` convertor function.
