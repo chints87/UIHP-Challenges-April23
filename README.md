@@ -72,14 +72,14 @@ Click into the input and type something. Notice that the user needs to manually 
 
 3. Let's add a click handler `'handleClick'` for the input box which sets the `value` inside the input box to an empty string when the user clicks in it to type. HINT: Make sure to add `handleClick` as a callback to the 'onclick' method of input element.
 
-Now we're changing our 'view' based on several different possible user interactions i.e 'onclick' and 'oninput. How can we make these changes more predictable? Let's restrict every change to view to be via:
+Now we're changing our 'view' based on several different possible user interactions i.e `onclick` and `oninput`. How can we make these changes more predictable? Let's restrict every change to view to be via:
 
-- an update of 'data'
+- an update of 'data' in the JS file
 - a run of a single `dataToView` convertor function.
 
 4. To do this, let's create a function `'dataToView'`. It should:
 
-   - Update the value in our input box on the DOM to be whatever `post` currently is. HINT: `post` should now start off as undefined, and if it is undefined when `dataToView` is invoked, we should populate the value in the input box to be the string containing 'What's on your mind?'. This also means `dataToView` needs to be invoked when the page is first loaded.
+   - Update the value in our input element on the DOM to be whatever `post` currently is. HINT: `post` should now start off as undefined, and if it is undefined when `dataToView` is invoked, we should populate the value in the input element to be the string containing 'What's on your mind?'. This also means `dataToView` needs to be invoked after updated to the input value i.e(What's in your mind) of the element.
 
    - Update the content of the div on the DOM to be our current data.
 
